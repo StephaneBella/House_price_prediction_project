@@ -1,0 +1,6 @@
+data:
+  raw_path: "C:/Users/DELL/Documents/VEMV/pycaret/work/Projets_professionnels/House_price_prediction_project/data/raw/kc_house_data.csv"
+  processed_path: "C:/Users/DELL/Documents/VEMV/pycaret/work/House_price_prediction_project/data/processed/kc_house_processed.csv"
+model:
+  path: "C:/Users/DELL/Documents/VEMV/pycaret/work/House_price_prediction_project/models/model_house_price_prediction.pkl"
+  params_path: "C:/Users/DELL/Documents/VEMV/pycaret/work/Projets_professionnels/House_price_prediction_project/config/model_params.json"

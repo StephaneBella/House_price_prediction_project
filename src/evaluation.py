@@ -127,22 +127,3 @@ def save_model_params(model, relative_output_path='config/model_params.json'):
         print(f"❌ Erreur lors de la sauvegarde du modèle : {e}")
 
 
-#def save_model_params(model):
-    #output_path = 'C:/Users/DELL/Documents/VEMV/pycaret/work/House_price_prediction_project/config/model_params.json'
-    # Obtenir uniquement les hyperparamètres du modèle
-    #params = model.get_params(deep=True)
-
-    # Supprimer les objets non sérialisables (comme les modèles imbriqués)
-    #serializable_params = {}
-    #for k, v in params.items():
-      #  try:
-      #      json.dumps(v)  # test de sérialisation
-      #      serializable_params[k] = v
-      #  except TypeError:
-     #       serializable_params[k] = str(v)  # sinon, convertir en string
-
-    #os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    #with open(output_path, 'w') as f:
-        #json.dump(serializable_params, f, indent=4)
-
-    #print(f"✅ Paramètres enregistrés dans : {output_path}")

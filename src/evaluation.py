@@ -96,13 +96,13 @@ def evaluation(model, x_train, y_train, x_test, y_test, model_name="model",
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 
-def save_model(model, output_path='models/model_cut_prediction.pkl'):
+def save_model(model, output_path='models/model_house_price_prediction.pkl'):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'wb') as f:
         pickle.dump(model, f)
     print(f"✅ Modèle LightGBM sauvegardé dans : {output_path}")
 
-def load_model(relative_path= 'models/model_price_prediction.txt'):
+def load_model(relative_path= 'models/model_house_price_prediction.txt'):
     output_path = os.path.join(PROJECT_ROOT, relative_path)
     model = lgb.Booster(model_file=output_path)
     return model

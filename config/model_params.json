@@ -1,0 +1,68 @@
+{
+    "memory": null,
+    "steps": [
+        [
+            "pipeline",
+            "Pipeline(steps=[('clustering', LocationClustering()),\n                ('target_encoding',\n                 TargetEncodingWrapper(cols=['zipcode', 'yr_built',\n                                             'yr_renovated', 'location_cluster',\n                                             'month_sold'])),\n                ('drop_cols', DropColumns(columns=['id', 'date']))])"
+        ],
+        [
+            "lgbmregressor",
+            "LGBMRegressor(random_state=3, verbose=-1)"
+        ]
+    ],
+    "verbose": false,
+    "pipeline": "Pipeline(steps=[('clustering', LocationClustering()),\n                ('target_encoding',\n                 TargetEncodingWrapper(cols=['zipcode', 'yr_built',\n                                             'yr_renovated', 'location_cluster',\n                                             'month_sold'])),\n                ('drop_cols', DropColumns(columns=['id', 'date']))])",
+    "lgbmregressor": "LGBMRegressor(random_state=3, verbose=-1)",
+    "pipeline__memory": null,
+    "pipeline__steps": [
+        [
+            "clustering",
+            "LocationClustering()"
+        ],
+        [
+            "target_encoding",
+            "TargetEncodingWrapper(cols=['zipcode', 'yr_built', 'yr_renovated',\n                            'location_cluster', 'month_sold'])"
+        ],
+        [
+            "drop_cols",
+            "DropColumns(columns=['id', 'date'])"
+        ]
+    ],
+    "pipeline__verbose": false,
+    "pipeline__clustering": "LocationClustering()",
+    "pipeline__target_encoding": "TargetEncodingWrapper(cols=['zipcode', 'yr_built', 'yr_renovated',\n                            'location_cluster', 'month_sold'])",
+    "pipeline__drop_cols": "DropColumns(columns=['id', 'date'])",
+    "pipeline__clustering__n_clusters": 100,
+    "pipeline__clustering__random_state": 42,
+    "pipeline__target_encoding__cols": [
+        "zipcode",
+        "yr_built",
+        "yr_renovated",
+        "location_cluster",
+        "month_sold"
+    ],
+    "pipeline__drop_cols__columns": [
+        "id",
+        "date"
+    ],
+    "lgbmregressor__boosting_type": "gbdt",
+    "lgbmregressor__class_weight": null,
+    "lgbmregressor__colsample_bytree": 1.0,
+    "lgbmregressor__importance_type": "split",
+    "lgbmregressor__learning_rate": 0.1,
+    "lgbmregressor__max_depth": -1,
+    "lgbmregressor__min_child_samples": 20,
+    "lgbmregressor__min_child_weight": 0.001,
+    "lgbmregressor__min_split_gain": 0.0,
+    "lgbmregressor__n_estimators": 100,
+    "lgbmregressor__n_jobs": null,
+    "lgbmregressor__num_leaves": 31,
+    "lgbmregressor__objective": null,
+    "lgbmregressor__random_state": 3,
+    "lgbmregressor__reg_alpha": 0.0,
+    "lgbmregressor__reg_lambda": 0.0,
+    "lgbmregressor__subsample": 1.0,
+    "lgbmregressor__subsample_for_bin": 200000,
+    "lgbmregressor__subsample_freq": 0,
+    "lgbmregressor__verbose": -1
+}
